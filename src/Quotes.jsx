@@ -13,7 +13,10 @@ const Quotes = () =>{
         let response = await result.json()
         setQuote(response.slip.advice)
         setLoad(false)
+        console.log(response)
     }
+
+
     catch (error){
     setQuote("an error occured please checkyour internet connection")
     setLoad(false)
